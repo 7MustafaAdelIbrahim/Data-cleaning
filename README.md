@@ -1,11 +1,11 @@
-### It's commonly said that data scientists spend ***80%*** of their time ***cleaning and manipulating data*** and only ***20%*** of their time ***analyzing it***. The time spent cleaning is vital since ***analyzing dirty data can lead you to draw inaccurate conclusions and misleading results***. 
-### As Without making sure that data is properly cleaned in the ***exploration and processing phase***, we will surely compromise the insights and reports subsequently generated, and the ***results of any data analysis*** or ***machine learning model could be inaccurate***.
+It's commonly said that data scientists spend ***80%*** of their time ***cleaning and manipulating data*** and only ***20%*** of their time ***analyzing it***. The time spent cleaning is vital since ***analyzing dirty data can lead you to draw inaccurate conclusions and misleading results***. 
+As Without making sure that data is properly cleaned in the ***exploration and processing phase***, we will surely compromise the insights and reports subsequently generated, and the ***results of any data analysis*** or ***machine learning model could be inaccurate***.
 
 #### As the old adage says, garbage in garbage out. 
 
 #### Dirty data can appear because of duplicate values, mis-spellings, data type parsing errors and legacy systems. 
 ## Data type constraints
-Luckily, *** Python has specific data type objects*** for various data types. This makes it much easier to manipulate these various data types in Python.
+Luckily, ***Python has specific data type objects***  for various data types. This makes it much easier to manipulate these various data types in Python.
 
 As such, before preparing to analyze and extract insights from our data, we need to make sure our variables have the correct data types, other wise we risk compromising our analysis. 
 
