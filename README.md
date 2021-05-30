@@ -22,19 +22,25 @@ This is most likely ***an error in data collection or parsing***, and ***treatin
 ## How to deal with out of range data?
 There's a ***variety of options*** to deal with out of range data. 
 
-	The simplest option is to drop the data. depending on the size of your out of range data, you could be losing out on essential information. 
-	As a rule of thumb, only drop data when a small proportion of your dataset is affected by out of range values.
+	The simplest option is to drop the data. 
+	depending on the size of your out of range data, you could be losing out on essential information. 
+	As a rule of thumb, 
+	only drop data when a small proportion of your dataset is affected by out of range values.
 	However, you really need to understand your dataset before deciding to drop values. 
 
-	Another option, setting custom minimums or maximums to your columns. We could also set the data to missing, and impute it.
- 	We could also, dependent on the business assumptions behind our data, assign a custom value for any values of our data that go beyond a certain range.
+	Another option, setting custom minimums or maximums to your columns. 
+	We could also set the data to missing, and impute it.
+ 	We could also, dependent on the business assumptions behind our data, 
+	assign a custom value for any values of our data that go beyond a certain range.
  
 ## Duplicate values 
 	## Complete duplicates.
 	It can be diagnosed when we have the same exact information repeated across multiple rows.
 	
 	## ***Duplicates with discrepancies***.
-	If there are ***duplicate values for all columns except one column***, which leads us to think ***it's more likely a data entry error than an actual other sample***. 
+	If there are ***duplicate values for all columns except one column***, 
+	which leads us to think ***it's more likely a data entry error than an actual other sample***.
+	
 duplicate data can also arise because of ***Apart from data entry*** and ***human errors*** or *** bugs and design errors whether in business processes or data pipelines***.
 However, they often most arise from ***the necessary act of joining and consolidating data from various resources***. 
 
@@ -58,7 +64,8 @@ Most simply, we can ***drop the rows with incorrect categories***.
 We can attempt ***remapping incorrect categories to correct ones***.
 
   ### the presence of too many categories that could be collapsed into a few ***(Value consistency)***.
-      #### having values that slightly differ because of ***capitalization***. Not treating this could lead to misleading results. 
+      #### having values that slightly differ because of ***capitalization***. 
+      Not treating this could lead to misleading results. 
           To deal with this, we can ***either capitalize or lowercase***,  
       ##### ***leading or trailing white spaces***. 
                 To deal with it, we can ***remove spaces***.
