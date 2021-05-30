@@ -1,7 +1,7 @@
 It's commonly said that data scientists spend ***80%*** of their time ***cleaning and manipulating data*** and only ***20%*** of their time ***analyzing it***. The time spent cleaning is vital since ***analyzing dirty data can lead you to draw inaccurate conclusions and misleading results***. 
 As Without making sure that data is properly cleaned in the ***exploration and processing phase***, we will surely compromise the insights and reports subsequently generated, and the ***results of any data analysis*** or ***machine learning model could be inaccurate***.
 
-#### As the old adage says, garbage in garbage out. 
+#### As the old says, ***garbage in garbage out***. 
 
 #### Dirty data can appear because of duplicate values, mis-spellings, data type parsing errors and legacy systems. 
 ## Data type constraints
