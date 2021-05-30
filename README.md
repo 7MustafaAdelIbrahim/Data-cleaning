@@ -1,7 +1,7 @@
 It's commonly said that data scientists spend ***80%*** of their time ***cleaning and manipulating data*** and only ***20%*** of their time ***analyzing it***. The time spent cleaning is vital since ***analyzing dirty data can lead you to draw inaccurate conclusions and misleading results***. 
 As Without making sure that data is properly cleaned in the ***exploration and processing phase***, we will surely compromise the insights and reports subsequently generated, and the ***results of any data analysis*** or ***machine learning model could be inaccurate***.
 
-#### As the old says, ***garbage in garbage out***. 
+	As the old says, ***garbage in garbage out***. 
 
 #### Dirty data can appear because of duplicate values, mis-spellings, data type parsing errors and legacy systems. 
 ## Data type constraints
@@ -22,18 +22,18 @@ This is most likely ***an error in data collection or parsing***, and ***treatin
 ## How to deal with out of range data?
 There's a ***variety of options*** to deal with out of range data. 
 
-***The simplest option*** is to ***drop the data***. depending on the size of your out of range data, you could be losing out on essential information. 
-***As a rule of thumb***, only drop data when a small proportion of your dataset is affected by out of range values, however you really need to understand your dataset before deciding to drop values. 
+	***The simplest option*** is to ***drop the data***. depending on the size of your out of range data, you could be losing out on essential information. 
+	***As a rule of thumb***, only drop data when a small proportion of your dataset is affected by out of range values, however you really need to understand 		your dataset before deciding to drop values. 
 
-***Another option***, ***setting custom minimums or maximums to your columns***. We could also set the data to missing, and impute it.
- We could also, dependent on the business assumptions behind our data, assign a custom value for any values of our data that go beyond a certain range.
+	***Another option***, ***setting custom minimums or maximums to your columns***. We could also set the data to missing, and impute it.
+ 	We could also, dependent on the business assumptions behind our data, assign a custom value for any values of our data that go beyond a certain range.
  
 ## Duplicate values 
-	## ***Complete duplicates***.
-It can be diagnosed when we have the same exact information repeated across multiple rows, 
+	## Complete duplicates.
+	It can be diagnosed when we have the same exact information repeated across multiple rows.
+	
 	## ***Duplicates with discrepancies***.
-If there are ***duplicate values for all columns except one column***, which leads us to think ***it's more likely a data entry error than an actual other sample***. 
-
+	If there are ***duplicate values for all columns except one column***, which leads us to think ***it's more likely a data entry error than an actual other sample***. 
 duplicate data can also arise because of ***Apart from data entry*** and ***human errors*** or *** bugs and design errors whether in business processes or data pipelines***.
 However, they often most arise from ***the necessary act of joining and consolidating data from various resources***. 
 
