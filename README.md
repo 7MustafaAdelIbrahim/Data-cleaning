@@ -3,7 +3,8 @@ As Without making sure that data is properly cleaned in the ***exploration and p
 
 	As the old says "garbage in garbage out". 
 #### Dirty data can appear because of duplicate values, mis-spellings, data type parsing errors and legacy systems. 
-## Data type constraints
+
+### Data type constraints
 We have to make sure that data is in correct type.
 Luckily, ***Python has specific data type objects***  for various data types. This makes it much easier to manipulate these various data types in Python.
 
@@ -14,11 +15,10 @@ Numeric or categorical ?
 represents categories with a finite set of possible categories. This is called categorical data.
 For example. ***marriage status***, ***takes never married***, ***married***, ***separated***, ***divorced***.
 
-## Data range constraints 
+### Data range constraints 
 If we have samples are ***well above the allowable range***. 
 This is most likely ***an error in data collection or parsing***, and ***treating it is essential to have accurate analysis***. 
-
-## How to deal with out of range data?
+   #### How to deal with out of range data?
 There's a ***variety of options*** to deal with out of range data. 
 The simplest option is to drop the data. 
 depending on the size of your out of range data, you could be losing out on essential information. 
@@ -31,7 +31,7 @@ We could also set the data to missing, and impute it.
 We could also, dependent on the business assumptions behind our data, 
 assign a custom value for any values of our data that go beyond a certain range.
  
-## Duplicate values 
+### Duplicate values 
    #### Complete duplicates.
    It can be diagnosed when we have the same exact information repeated across multiple rows.
 	
@@ -43,7 +43,7 @@ duplicate data can also arise because of ***Apart from data entry*** and ***huma
 or *** bugs and design errors whether in business processes or data pipelines***.
 However, they often most arise from ***the necessary act of joining and consolidating data from various resources***. 
 
-## How to treat duplicate values?
+  ### How to treat duplicate values?
 ***The complete duplicates*** can be treated easily. All that is required is to ***keep one of them only and discard the others***. 
 
 ***Duplicate with discrepancies***. Apart from dropping rows with really small discrepancies, we can use a ***statistical measure to combine or aggregate each set of duplicated values***.
@@ -93,17 +93,17 @@ You don't have to memorize these formats, just know that they exist and are easi
 ### Cross field validation
 If dataset have been collected and merged from different sources, and a common challenge is data integrity, or more broadly making sure that our data is correct.
 This is where cross field validation comes in. It's the use of multiple fields in your dataset to sanity check the integrity of your data. 
-##### For example, flights dataset, this could be summing economy, business and first class values. 
+   ##### For example, flights dataset, this could be summing economy, business and first class values. 
 Cross field validation is to make sure they are equal to the total passengers on the plane.
  This could be easily done in Pandas, by first subsetting on the columns to sum, 
  then using the sum method with the axis argument set to 1 to indicate row wise summing. 
  We then find instances where the total passengers column is equal to the sum of the classes. 
  And find and filter out instances of inconsistent passenger amounts by subsetting on the equality we created with brack.
  
-##### Here's another example, birthdays and age values for a set of users. 
+   ##### another example, birthdays and age values for a set of users. 
 We can for example make sure that the age and birthday columns are correct by subtracting the number of years between today's date and each birthday. 
 
-##### What to do when we spot inconsistencies with cross-field validation ?
+   ##### What to do when we spot inconsistencies with cross-field validation ?
 Just like other data cleaning problems, there is no one size fits all solution, 
 as often the best solution requires an in depth understanding of our dataset. 
 We can decide to either drop inconsistent data, set it to missing and impute it, or apply some rules due to domain knowledge. 
@@ -131,7 +131,7 @@ There is a systematic relationship between a column's missing values and unobser
 
 ## How to deal with missing data?
 There's a variety of ways of dealing with missing data.
-	#### 1- dropping missing data.
-	#### 2-imputing them with statistical measures such as mean, median or mode, 
-	#### 3-imputing them with more complicated algorithmic approaches or ones that require some machine learning. 
+   #### 1- dropping missing data.
+   #### 2-imputing them with statistical measures such as mean, median or mode, 
+   #### 3-imputing them with more complicated algorithmic approaches or ones that require some machine learning. 
 	Each missingness type requires a specific approach, and each type of approach has drawbacks and positives.
