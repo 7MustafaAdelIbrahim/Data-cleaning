@@ -62,7 +62,7 @@ There's a ***variety of ways we can treat these***, with increasingly specific s
 Most simply, we can ***drop the rows with incorrect categories***. 
 We can attempt ***remapping incorrect categories to correct ones***.
 
-  ### the presence of too many categories that could be collapsed into a few ***(Value consistency)***.
+### the presence of too many categories that could be collapsed into a few ***(Value consistency)***.
       #### having values that slightly differ because of ***capitalization***. 
       Not treating this could lead to misleading results. 
           To deal with this, we can ***either capitalize or lowercase***,  
@@ -75,8 +75,10 @@ Cleaning text data and regular expressions.
 Common text data problems include handling inconsistencies, making sure text data is of a certain length, typos and others. 
 Remove additional strips and special characters like dashes, for example phone numbers are aligned to begin with 00
 But what about more complicated examples?  What if phone numbers can contain a range of symbols from plus signs, dashes, parenthesis and maybe more?!  
-This is where regular expressions come in. Regular expressions give us the ability to search for any pattern in text data, like only digits for example. They are like control + find in your browser, but way more dynamic and robust. 
+This is where regular expressions come in. Regular expressions give us the ability to search for any pattern in text data, 
+like only digits for example. They are like control + find in your browser, but way more dynamic and robust. 
 more advanced data cleaning problems, such as uniformity, cross field validation and dealing with missing data. when left untouched, can skew your analysis. 
+
 ## Unit uniformity
 Values are recorded in ***different units of measure***. It's a problem that could ***similarly skew our data***.  
 For example, ***temperature data in Celsius and Fahrenheit*** merged together, or ***weight data in Kilograms and in stones***.
@@ -85,34 +87,51 @@ or ***Uniform currencies***, data on the amount of money stored in ***different 
 Verifying unit uniformity is imperative to having ***accurate analysis***. 
 You don’t have to memorize all different units of measure  you may encounter, A simple web search returns the formula for converting Fahrenheit to Celsius.
 another common uniformity problem with date data or  ***dates in multiple formats***. 
-DataFrame containing birth dates for a variety of individuals. It may have been collected from a variety of sources and merged into one. one has the month/ day /year format, whereas anther one has the month written out. one more looks like a day /day /year format. 
-YYYY-mm-dd and YYYY-dd-mm. What is the best way to unify the formats for ambiguous values such as 2019-04-07?
+DataFrame containing birth dates for a variety of individuals. It may have been collected from a variety of sources and merged into one. 
+one has the month/ day /year format, whereas anther one has the month written out. one more looks like a day /day /year format. 
+What is the best way to unify the formats for ambiguous values such as 2019-04-07?!
+a common problem is having ambiguous dates with vague formats. For example, 03-08-2021 is this date value set in March or August? 
+Unfortunately, there's no clear way to spot this inconsistency or to treat it. 
+Depending on the size of the dataset and suspected ambiguities, we can either convert these dates to NAs and deal with them accordingly.
+If you have additional context on the source of your data, you can probably infer the format.
 You don't have to memorize these formats, just know that they exist and are easily searchable! 
-However, a common problem is having ambiguous dates with vague formats. For example, 03-08-2021 is this date value set in March or August? Unfortunately, there's no clear way to spot this inconsistency or to treat it. Depending on the size of the dataset and suspected ambiguities, we can either convert these dates to NAs and deal with them accordingly. If you have additional context on the source of your data, you can probably infer the format.
 
 ## Cross field validation
 If dataset have been collected and merged from different sources, and a common challenge is data integrity, or more broadly making sure that our data is correct.
 This is where cross field validation comes in. It's the use of multiple fields in your dataset to sanity check the integrity of your data. 
-For example, flights dataset, this could be summing economy, business and first class values and making sure they are equal to the total passengers on the plane.
- This could be easily done in Pandas, by first subsetting on the columns to sum, then using the sum method with the axis argument set to 1 to indicate row wise summing. We then find instances where the total passengers column is equal to the sum of the classes. And find and filter out instances of inconsistent passenger amounts by subsetting on the equality we created with brack
-Here's another example, birthdays and age values for a set of users. We can for example make sure that the age and birthday columns are correct by subtracting the number of years between today's date and each birthday. 
-What to do when we spot inconsistencies with cross-field validation ?
-Just like other data cleaning problems, there is no one size fits all solution, as often the best solution requires an in depth understanding of our dataset. We can decide to either drop inconsistent data, set it to missing and impute it, or apply some rules due to domain knowledge. All these routes and assumptions can be decided upon only when you have a good understanding of where your dataset comes from and the different sources feeding into it. 
-Completeness and missing data. 
+##### For example, flights dataset, this could be summing economy, business and first class values. 
+Cross field validation is to make sure they are equal to the total passengers on the plane.
+ This could be easily done in Pandas, by first subsetting on the columns to sum, 
+ then using the sum method with the axis argument set to 1 to indicate row wise summing. 
+ We then find instances where the total passengers column is equal to the sum of the classes. 
+ And find and filter out instances of inconsistent passenger amounts by subsetting on the equality we created with brack.
+ 
+##### Here's another example, birthdays and age values for a set of users. 
+We can for example make sure that the age and birthday columns are correct by subtracting the number of years between today's date and each birthday. 
+
+## What to do when we spot inconsistencies with cross-field validation ?
+Just like other data cleaning problems, there is no one size fits all solution, 
+as often the best solution requires an in depth understanding of our dataset. 
+We can decide to either drop inconsistent data, set it to missing and impute it, or apply some rules due to domain knowledge. 
+All these routes and assumptions can be decided upon only when you have a good understanding of where your dataset 
+that comes from and the different sources feeding into it. 
+
+## Completeness and missing data. 
 What is missing data?
-Missing data is one of the most common and most important data cleaning problems. Essentially, It's when no data value is stored for a variable in an observation, mostly commonly represented as NA or NaN, but can take on arbitrary values like 0 or dot.
- Like a lot of the problems, it's commonly due to technical or human errors. 
-Missing data can take many forms, so let's take a look at an example. 
-7. Missingno
-The missingno package allows to create useful visualizations of our missing data. 
- Missingness types
+Missing data is one of the most common and most important data cleaning problems. 
+Essentially, It's when no data value is stored for a variable in an observation, mostly commonly represented as NA or NaN, 
+but can take on arbitrary values like 0 or dot.
+Like a lot of the problems, it's commonly due to technical or human errors. 
+Missing data can take many forms. 
+             
+	 The missingno package allows to create useful visualizations of our missing data. 
+
+### Missingness types
 This leads us to missingness types. there are a variety of types of missing data.
 
 	•	Missing Completely at Random data: is when there's missing data completely due to randomness, and there is no systematic relationship between missing 			data and remaining values, such data entry errors. 
 	•	Missing at Random data: Despite a slightly deceiving name, It's when there is a systematic relationship between missing data and other observed 		values.
 	•	Missing not at Random: There is a systematic relationship between a column's missing values and unobserved values.
-
-For example, when it's really hot outside, the thermometer might stop working, so we don't have temperature measurements for days with high temperatures. However, we have no way to tell this just from looking at the data since we can't actually see what the missing temperatures are. 
 
 ## How to deal with missing data?
 There's a variety of ways of dealing with missing data.
