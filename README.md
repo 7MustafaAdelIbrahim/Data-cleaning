@@ -48,7 +48,7 @@ However, they often most arise from ***the necessary act of joining and consolid
 
 ***Duplicate with discrepancies***. Apart from dropping rows with really small discrepancies, we can use a ***statistical measure to combine or aggregate each set of duplicated values***.
 
-## Categories and membership constraints ***(uniqueness constraints)***.
+### Categories and membership constraints ***(uniqueness constraints)***.
 
 categorical data represent variables that represent predefined finite set of categories.
 ***To run machine learning models*** on categorical data, they are ***often coded as numbers***. 
@@ -56,19 +56,16 @@ categorical data represent variables that represent predefined finite set of cat
 Since categorical data represent a predefined set of categories, they can't have values that go beyond these predefined categories. 
 We can have ***inconsistencies in our categorical data*** for a variety of reasons. 
 This could be due to ***data entry issues with free text vs dropdown fields***, ***data parsing errors and other types of errors***. 
-
-  ### How do we treat these problems?
+   #### How do we treat these problems?
 There's a ***variety of ways we can treat these***, with increasingly specific solutions for different types of inconsistencies.
 Most simply, we can ***drop the rows with incorrect categories***. 
 We can attempt ***remapping incorrect categories to correct ones***.
-
-### the presence of too many categories that could be collapsed into a few ***(Value consistency)***.
+   #### the presence of too many categories that could be collapsed into a few ***(Value consistency)***.
    -having values that slightly differ because of ***capitalization***. Not treating this could lead to misleading results. 
    To deal with this, we can ***either capitalize or lowercase***.
    -leading or trailing white spaces***. 
     To deal with it, we can ***remove spaces***.
-## Collapsing data into categories.
-
+   #### Collapsing data into categories.
 Sometimes, we may want to create categories out of our data, such as creating household income groups from income data column in the demographics Data Frame
 Cleaning text data and regular expressions. 
 Common text data problems include handling inconsistencies, making sure text data is of a certain length, typos and others. 
@@ -76,13 +73,12 @@ Remove additional strips and special characters like dashes, for example phone n
 But what about more complicated examples?  What if phone numbers can contain a range of symbols from plus signs, dashes, parenthesis and maybe more?!  
 This is where regular expressions come in. Regular expressions give us the ability to search for any pattern in text data, 
 like only digits for example. They are like control + find in your browser, but way more dynamic and robust. 
-more advanced data cleaning problems, such as uniformity, cross field validation and dealing with missing data. when left untouched, can skew your analysis. 
+more advanced data cleaning problems, such as uniformity, cross field validation and dealing with missing data. when left untouched, can skew your analysis.
 
-## Unit uniformity
+### Unit uniformity
 Values are recorded in ***different units of measure***. It's a problem that could ***similarly skew our data***.  
 For example, ***temperature data in Celsius and Fahrenheit*** merged together, or ***weight data in Kilograms and in stones***.
 or ***Uniform currencies***, data on the amount of money stored in ***different currencies***. 
-
 Verifying unit uniformity is imperative to having ***accurate analysis***. 
 You don’t have to memorize all different units of measure  you may encounter, A simple web search returns the formula for converting Fahrenheit to Celsius.
 another common uniformity problem with date data or  ***dates in multiple formats***. 
@@ -94,8 +90,7 @@ Unfortunately, there's no clear way to spot this inconsistency or to treat it.
 Depending on the size of the dataset and suspected ambiguities, we can either convert these dates to NAs and deal with them accordingly.
 If you have additional context on the source of your data, you can probably infer the format.
 You don't have to memorize these formats, just know that they exist and are easily searchable! 
-
-## Cross field validation
+### Cross field validation
 If dataset have been collected and merged from different sources, and a common challenge is data integrity, or more broadly making sure that our data is correct.
 This is where cross field validation comes in. It's the use of multiple fields in your dataset to sanity check the integrity of your data. 
 ##### For example, flights dataset, this could be summing economy, business and first class values. 
@@ -108,33 +103,35 @@ Cross field validation is to make sure they are equal to the total passengers on
 ##### Here's another example, birthdays and age values for a set of users. 
 We can for example make sure that the age and birthday columns are correct by subtracting the number of years between today's date and each birthday. 
 
-## What to do when we spot inconsistencies with cross-field validation ?
+##### What to do when we spot inconsistencies with cross-field validation ?
 Just like other data cleaning problems, there is no one size fits all solution, 
 as often the best solution requires an in depth understanding of our dataset. 
 We can decide to either drop inconsistent data, set it to missing and impute it, or apply some rules due to domain knowledge. 
 All these routes and assumptions can be decided upon only when you have a good understanding of where your dataset 
 that comes from and the different sources feeding into it. 
 
-## Completeness and missing data. 
+### Completeness and missing data. 
 What is missing data?
 Missing data is one of the most common and most important data cleaning problems. 
 Essentially, It's when no data value is stored for a variable in an observation, mostly commonly represented as NA or NaN, 
 but can take on arbitrary values like 0 or dot.
 Like a lot of the problems, it's commonly due to technical or human errors. 
 Missing data can take many forms. 
-             
-	 The missingno package allows to create useful visualizations of our missing data. 
 
+	 The missingno package allows to create useful visualizations of our missing data. 
 ### Missingness types
 This leads us to missingness types. there are a variety of types of missing data.
-
-	•Missing Completely at Random data: is when there's missing data completely due to randomness, and there is no systematic relationship between missing 			data and remaining values, such data entry errors. 
-	•Missing at Random data: Despite a slightly deceiving name, It's when there is a systematic relationship between missing data and other observed 		values.
-	•Missing not at Random: There is a systematic relationship between a column's missing values and unobserved values.
+#### • Missing Completely at Random data: 
+is when there's missing data completely due to randomness, and there is no systematic relationship between missing 
+data and remaining values, such data entry errors. 
+#### • Missing at Random data: 
+Despite a slightly deceiving name, It's when there is a systematic relationship between missing data and other observed values.
+#### • Missing not at Random: 
+There is a systematic relationship between a column's missing values and unobserved values.
 
 ## How to deal with missing data?
 There's a variety of ways of dealing with missing data.
-
-	1- dropping missing data.
-	2-imputing them with statistical measures such as mean, median or mode, 
-	3-imputing them with more complicated algorithmic approaches or ones that require some machine learning. Each missingness type requires a specific 		approach, and each type of approach has drawbacks and positives.
+	#### 1- dropping missing data.
+	#### 2-imputing them with statistical measures such as mean, median or mode, 
+	#### 3-imputing them with more complicated algorithmic approaches or ones that require some machine learning. 
+	Each missingness type requires a specific approach, and each type of approach has drawbacks and positives.
