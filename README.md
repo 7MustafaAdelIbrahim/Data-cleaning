@@ -20,27 +20,27 @@ This is most likely ***an error in data collection or parsing***, and ***treatin
 
 ## How to deal with out of range data?
 There's a ***variety of options*** to deal with out of range data. 
-
-	The simplest option is to drop the data. 
-	depending on the size of your out of range data, you could be losing out on essential information. 
-	As a rule of thumb, 
-	only drop data when a small proportion of your dataset is affected by out of range values.
-	However, you really need to understand your dataset before deciding to drop values. 
-
-	Another option, setting custom minimums or maximums to your columns. 
-	We could also set the data to missing, and impute it.
- 	We could also, dependent on the business assumptions behind our data, 
-	assign a custom value for any values of our data that go beyond a certain range.
+The simplest option is to drop the data. 
+depending on the size of your out of range data, you could be losing out on essential information. 
+	  
+	  As a rule of thumb, only drop data when a small proportion of your dataset is affected by out of range values.
+	  
+However, you really need to understand your dataset before deciding to drop values. 
+Another option, setting custom minimums or maximums to your columns. 
+We could also set the data to missing, and impute it.
+We could also, dependent on the business assumptions behind our data, 
+assign a custom value for any values of our data that go beyond a certain range.
  
 ## Duplicate values 
-	## Complete duplicates.
-	It can be diagnosed when we have the same exact information repeated across multiple rows.
+   #### Complete duplicates.
+   It can be diagnosed when we have the same exact information repeated across multiple rows.
 	
-	## ***Duplicates with discrepancies***.
-	If there are ***duplicate values for all columns except one column***, 
-	which leads us to think ***it's more likely a data entry error than an actual other sample***.
+   #### ***Duplicates with discrepancies***.
+   If there are ***duplicate values for all columns except one column***, 
+   which leads us to think ***it's more likely a data entry error than an actual other sample***.
 	
-duplicate data can also arise because of ***Apart from data entry*** and ***human errors*** or *** bugs and design errors whether in business processes or data pipelines***.
+duplicate data can also arise because of ***Apart from data entry*** and ***human errors*** 
+or *** bugs and design errors whether in business processes or data pipelines***.
 However, they often most arise from ***the necessary act of joining and consolidating data from various resources***. 
 
 ## How to treat duplicate values?
@@ -63,11 +63,10 @@ Most simply, we can ***drop the rows with incorrect categories***.
 We can attempt ***remapping incorrect categories to correct ones***.
 
 ### the presence of too many categories that could be collapsed into a few ***(Value consistency)***.
-      #### having values that slightly differ because of ***capitalization***. 
-      Not treating this could lead to misleading results. 
-          To deal with this, we can ***either capitalize or lowercase***,  
-      ##### ***leading or trailing white spaces***. 
-                To deal with it, we can ***remove spaces***.
+   -having values that slightly differ because of ***capitalization***. Not treating this could lead to misleading results. 
+   To deal with this, we can ***either capitalize or lowercase***.
+   -leading or trailing white spaces***. 
+    To deal with it, we can ***remove spaces***.
 ## Collapsing data into categories.
 
 Sometimes, we may want to create categories out of our data, such as creating household income groups from income data column in the demographics Data Frame
@@ -129,13 +128,13 @@ Missing data can take many forms.
 ### Missingness types
 This leads us to missingness types. there are a variety of types of missing data.
 
-	•	Missing Completely at Random data: is when there's missing data completely due to randomness, and there is no systematic relationship between missing 			data and remaining values, such data entry errors. 
-	•	Missing at Random data: Despite a slightly deceiving name, It's when there is a systematic relationship between missing data and other observed 		values.
-	•	Missing not at Random: There is a systematic relationship between a column's missing values and unobserved values.
+	•Missing Completely at Random data: is when there's missing data completely due to randomness, and there is no systematic relationship between missing 			data and remaining values, such data entry errors. 
+	•Missing at Random data: Despite a slightly deceiving name, It's when there is a systematic relationship between missing data and other observed 		values.
+	•Missing not at Random: There is a systematic relationship between a column's missing values and unobserved values.
 
 ## How to deal with missing data?
 There's a variety of ways of dealing with missing data.
 
 	1- dropping missing data.
-	2-	imputing them with statistical measures such as mean, median or mode, 
-	3-	imputing them with more complicated algorithmic approaches or ones that require some machine learning. Each missingness type requires a specific 		approach, and each type of approach has drawbacks and positives.
+	2-imputing them with statistical measures such as mean, median or mode, 
+	3-imputing them with more complicated algorithmic approaches or ones that require some machine learning. Each missingness type requires a specific 		approach, and each type of approach has drawbacks and positives.
