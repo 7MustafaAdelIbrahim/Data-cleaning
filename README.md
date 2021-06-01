@@ -10,10 +10,9 @@ Luckily, ***Python has specific data type objects***  for various data types. Th
 As such, before preparing to analyze and extract insights from our data, we need to make sure our variables have the correct data types, other wise we risk compromising our analysis. 
 
 If there is ***any strip*** in the column, and is we want to do ***mathematics operation***, such as summing and multiplication, returns one ***large concatenated string*** containing each row's string not numerical outputs. 
-
-## Numeric or categorical ?
+Numeric or categorical ?
 represents categories with a finite set of possible categories. This is called categorical data.
-#### For example. ***marriage status***, ***takes never married***, ***married***, ***separated***, ***divorced***.
+For example. ***marriage status***, ***takes never married***, ***married***, ***separated***, ***divorced***.
 
 ## Data range constraints 
 If we have samples are ***well above the allowable range***. 
