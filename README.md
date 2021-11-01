@@ -23,7 +23,8 @@ There's a ***variety of options*** to deal with out of range data.
 The simplest option is to drop the data. 
 depending on the size of your out of range data, you could be losing out on essential information. 
 	  
-	  As a rule of thumb, only drop data when a small proportion of your dataset is affected by out of range values.
+	  As a rule of thumb.
+	only drop data when a small proportion of your dataset is affected by out of range values.
 	  
 However, you really need to understand your dataset before deciding to drop values. 
 Another option, setting custom minimums or maximums to your columns. 
