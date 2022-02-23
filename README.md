@@ -90,6 +90,9 @@ We can attempt ***remapping incorrect categories to correct ones***.
    To deal with this, we can ***either capitalize or lowercase***.
    -leading or trailing white spaces***. 
     To deal with it, we can ***remove spaces***.
+    
+    ![what type of error do we have in memnership consatint](https://user-images.githubusercontent.com/84151016/155373250-7eb3709d-9261-45a8-83b8-dafdc4a0c0f0.jpeg)
+
    ### Collapsing data into categories.
 Sometimes, we may want to create categories out of our data, such as creating household income groups from income data column in the demographics Data Frame
 Cleaning text data and regular expressions.
