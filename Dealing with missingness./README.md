@@ -50,6 +50,3 @@ A good way to analyze the performance of different imputations is to observe the
 ![kde](https://user-images.githubusercontent.com/84151016/155798903-6b7d1075-58ff-4960-a236-c81aa7541e25.jpeg)
 
 The KNN and MICE imputations are much more identical to the base DataFrame with the peak of MICE imputation being slightly shifted! So, better to use KNN imputation.
-
-
-
