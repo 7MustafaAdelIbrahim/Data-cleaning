@@ -40,6 +40,14 @@ We tried to answer som questions, Like:
 - Are waiting-type rates affected by the day of travel ?
 - Are satisfaction rates affected by waiting time ?
 - What is the relation between cleanliness and satisfication ?
+- ....... and more.
+
+![table](https://user-images.githubusercontent.com/84151016/155775458-35c34f5d-1aa8-4339-8210-dd66e5b248e8.jpeg)
+
+
+
 We noted that the satisfaction rates of passengers distinguish and vary according to the degree of cleanliness, as the dissatisfaction increased completely with the passengers who registered completely unclean, and vice versa.
 <br> Not: not exist means we don't have samples recorded with these values.
+
+![cleanliness and satistfiction](https://user-images.githubusercontent.com/84151016/155775494-681bcf55-8964-422f-8e6e-d04efc7bf7f5.jpeg)
 
