@@ -96,5 +96,4 @@ and the same for 1990, 1988, 1975
 
 ![age 1](https://user-images.githubusercontent.com/84151016/156052448-662907de-83da-45bf-aceb-667b7ea7ed3a.jpeg)
 
-Doing the same for inv_amoubnt, we will create new column for investment amount validation. from the cell above.
-            
+Doing the same for inv_amoubnt, we will create new column for investment amount validation.
