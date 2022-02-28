@@ -32,6 +32,8 @@ For completely duplicates, simply we are goning to drop it.
 ##### user_gender.
 Just 1.4% from our samples that have not been recorded truely, So we'll replace this with the most frequent which is male in this case.
 
+![user_gender](https://user-images.githubusercontent.com/84151016/156053633-3b06be0b-93f6-48d9-9b8c-ba83fcf6d5e6.jpeg)
+
 
 Each statiion_A_name has a different id, and since we have 9 places and 9 ids,then there is no problem with statiion_A_name.
 Our dataset is already from San Francisco, So having San Francisico in each station A name does not add value or certain information. So, we'll drop it.
@@ -40,8 +42,15 @@ Our dataset is already from San Francisco, So having San Francisico in each stat
 and 'Powell St BART Station (Market St at 5th St)'
 are two different stations with very small differencies in street number 4th and 5th.
 So let's collabse them into one category or one station.
+![station a id](https://user-images.githubusercontent.com/84151016/156053690-e56cb676-5d34-4710-a859-3bd734808434.jpeg)
+
+![station A id 11](https://user-images.githubusercontent.com/84151016/156053715-cd6f6422-06ef-470b-af00-7d114d2ef271.jpeg)
 
 
-Exploratory data analysis.
+### Exploratory data analysis.
+
+What's the realtion between user gender and type ?
+
+![user gender and type](https://user-images.githubusercontent.com/84151016/156053778-b9009f4d-073a-4bf8-a718-0e85f08b896f.jpeg)
 
 
