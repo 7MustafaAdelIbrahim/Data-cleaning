@@ -5,10 +5,11 @@
 you will be working with a retail banking dataset stored in the banking DataFrame.
 The dataset contains data on the amount of money stored in accounts, their currency, amount invested, account opening date and last transaction date 
 that were consolidated from American and European branches.
+# ***Data cleaning.***
 
-## Data type constraint.
+## ***Data type constraint.***
+    First we have to make sure that our dataset is in correct datatype.
 
-First we have to make sure about our columns datatypes.
 birth_date, account_opended and Last_transaction columns are in object datatype but they contain date. So, we have to convert them into datetime formate.
 However, since this data was consolidated from multiple sources, you need to make sure that all dates are of the same format. You will do so by converting this column into a datetime object, while making sure that the format is inferred and potentially incorrect formats are set to missing. As The 21-14-17 entry is erroneous and leads to an error.
 
