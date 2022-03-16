@@ -96,7 +96,11 @@ We can attempt ***remapping incorrect categories to correct ones***.
    ### Collapsing data into categories.
 Sometimes, we may want to create categories out of our data, such as creating household income groups from income data column in the demographics Data Frame
 Cleaning text data and regular expressions.
-![membership constaint](https://user-images.githubusercontent.com/84151016/155368522-e7036955-ec01-4c36-ab62-5fdf17aaceac.jpeg)
+![24190018-18436faca7405759b074f6c4e544c2d3](https://user-images.githubusercontent.com/84151016/158670548-b3919eff-7465-4e7f-895d-a8835a7385a8.png)
+
+
+More explanition 
+![24039531-bec2ded0af5f430dc6d36d313f7f00ca](https://user-images.githubusercontent.com/84151016/158668826-48a52dc7-042a-4ad0-a83a-683a8f9e33f6.png)
 
 ## Clean text data.
 
