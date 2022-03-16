@@ -24,7 +24,7 @@ For example. ***marriage status***, ***takes never married***, ***married***, **
 ## Data range constraints 
 If we have samples are ***well above the allowable range***.
 
-![data range constarints](https://user-images.githubusercontent.com/84151016/155366771-62920c0d-b79a-4405-9ea7-d34000671617.jpeg)
+![24190018-18436faca7405759b074f6c4e544c2d3](https://user-images.githubusercontent.com/84151016/158670548-b3919eff-7465-4e7f-895d-a8835a7385a8.png)
 
 This is most likely ***an error in data collection or parsing***, and ***treating it is essential to have accurate analysis***.
 
@@ -94,16 +94,17 @@ We can attempt ***remapping incorrect categories to correct ones***.
     ![what type of error do we have in memnership consatint](https://user-images.githubusercontent.com/84151016/155373250-7eb3709d-9261-45a8-83b8-dafdc4a0c0f0.jpeg)
 
    ### Collapsing data into categories.
-Sometimes, we may want to create categories out of our data, such as creating household income groups from income data column in the demographics Data Frame
-Cleaning text data and regular expressions.
-![24190018-18436faca7405759b074f6c4e544c2d3](https://user-images.githubusercontent.com/84151016/158670548-b3919eff-7465-4e7f-895d-a8835a7385a8.png)
+Sometimes, we may want to create categories out of our data, such as creating household income groups from income data column in the demographics DataFrames.
+
+![24190379-59c36cf8215ee6ebb127f1fe9aa89a14](https://user-images.githubusercontent.com/84151016/158673629-162f541d-19ae-464c-89a8-946cdd2d4aed.png)
 
 
 More explanition 
 ![24039531-bec2ded0af5f430dc6d36d313f7f00ca](https://user-images.githubusercontent.com/84151016/158668826-48a52dc7-042a-4ad0-a83a-683a8f9e33f6.png)
 
-## Clean text data.
 
+## Clean text data.
+	Cleaning text data and regular expressions.
 ![clean text data](https://user-images.githubusercontent.com/84151016/155368653-b3257987-eeed-4395-8389-896a4766d502.jpeg)
 
 Common text data problems include handling inconsistencies, making sure text data is of a certain length, typos and others. 
