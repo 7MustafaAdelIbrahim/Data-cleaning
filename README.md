@@ -23,12 +23,10 @@ For example. ***marriage status***, ***takes never married***, ***married***, **
 
 ## Data range constraints 
 If we have samples are ***well above the allowable range***.
+This is most likely ***an error in data collection or parsing***, and ***treating it is essential to have accurate analysis***.
 
 ![24190018-18436faca7405759b074f6c4e544c2d3](https://user-images.githubusercontent.com/84151016/158670548-b3919eff-7465-4e7f-895d-a8835a7385a8.png)
 
-This is most likely ***an error in data collection or parsing***, and ***treating it is essential to have accurate analysis***.
-
-![out of range](https://user-images.githubusercontent.com/84151016/155366824-7e25a483-de55-46a4-ab9c-583d6196a9c6.jpeg)
 
    #### How to deal with out of range data?
 There's a ***variety of options*** to deal with out of range data. 
@@ -99,8 +97,11 @@ Sometimes, we may want to create categories out of our data, such as creating ho
 ![24190379-59c36cf8215ee6ebb127f1fe9aa89a14](https://user-images.githubusercontent.com/84151016/158673629-162f541d-19ae-464c-89a8-946cdd2d4aed.png)
 
 
-More explanition 
+More explanition
+
 ![24039531-bec2ded0af5f430dc6d36d313f7f00ca](https://user-images.githubusercontent.com/84151016/158668826-48a52dc7-042a-4ad0-a83a-683a8f9e33f6.png)
+![24039629-e0b088055fe14be3fbc8a5c468474eea](https://user-images.githubusercontent.com/84151016/158674381-309928a7-af63-4d78-8a9f-cfbfc4fb36c4.png)
+
 
 
 ## Clean text data.
