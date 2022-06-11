@@ -1,28 +1,23 @@
 # Dealing with missingness.
 
 ## ***Inspiration.***
-I have worked on pima-indians-diabetes to practice on data cleaning problems specially dealing with missingness:
+The goal of this notebook is to practice on data cleaning problems specially dealing with missingness exist in this dataset(Pima Indians Diabetes dataset):
     Getting the reason for being missed.
     Understanding the pattern of missingness.
     Chosse the best imputation technique.
-
 
 ## ***Context.***
 This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage.
 The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
-### ***Acknowledgements.***
-Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., & Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261--265). IEEE Computer Society Press.
+
+## What is Diabetes?‎
+Diabetes is a chronic disease that occurs when the pancreas is no longer able to make insulin, or ‎when the body cannot make good use of the insulin it produces. Insulin is a hormone made by ‎the pancreas, that acts like a key to let glucose from the food we eat pass from the blood stream ‎into the cells in the body to produce energy. All carbohydrate foods are broken down into ‎glucose in the blood. Insulin helps glucose get into the cells. Not being able to produce insulin or ‎use it effectively leads to raised glucose levels in the blood (known as hyperglycaemia). Over the ‎long-term high glucose levels are associated with damage to the body and failure of various ‎organs and tissues.‎
+
     
 ## Data cleaning.
     A summary of problems we have found in our dataset.
-
-We've 768 entries, one row for each sample that is prone to be diabetic. We have alot of missingness
-
-![class](https://user-images.githubusercontent.com/84151016/155798497-347f3553-0404-4aca-9e9b-a8407bd482a0.jpeg)
-
-The largest proportion of samples are not diabetic.
-
+    
 ![the distribution of missingness](https://user-images.githubusercontent.com/84151016/155798584-0bbd6bc1-2da7-4cf9-8f7b-77f58242a3b2.jpeg)
 
 Intersting, we can observe that missingness in SkinThickness is Missing Not at Random. Let's dig deeper and find out more about missingness.
